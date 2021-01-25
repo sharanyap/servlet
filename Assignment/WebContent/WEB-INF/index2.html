@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>JSP Lecture</title>
+        <style>
+            .first{grid-area: first;}
+            .second{grid-area:second;}
+            .third{grid-area:third;}
+            main{
+                display: grid;
+                grid-template-areas: 
+                'first second third';
+                gap: 20px;
+           }
+           .first_fieldset  > label{
+               float:left;
+               width: 20ch;
+               text-align:right;
+           }
+           .first_fieldset > input{
+               margin-left:0.5em;
+               margin-bottom: 0.5em;
+           }
+        </style>
+    </head>
+    <main>
+        <form id="first_form" action="photoshoot" method="post">
+            <section class="first">
+                <fieldset class="first_fieldset">
+                    <legend>Country name </legend>
+                    <input type="text" name = "c_name"> 
+                    <br>
+                    </fieldset>         
+        </section>
+        <br> 
+        <section class="second">
+                    <fieldset class="second_fieldset">
+                        <legend>Continents</legend>
+                        <input type="checkbox" name="continent" value="North America" checked> North America <br>
+                        <input type="checkbox" name="continent" value="South America"> South America<br>
+                        <input type="checkbox" name="continent" value="Europe"> Europe<br>
+                        <input type="checkbox" name="continent" value="Asia"> Asia<br>
+                        <input type="checkbox" name="continent" value="Africa"> Africa <br>
+                </fieldset>
+
+        </section>
+        <br> 
+        <section class="third">
+                    <fieldset class="third_fieldset">
+                        <legend>Number</legend>
+                        <input type="text" name="number" maxlength="2" pattern = "[0-9]"> <br>
+                    </fieldset>
+        </section>
+        <br> <br>
+        <button type="submit">Submit</button>
+    </form>            
+</main>
+</html>

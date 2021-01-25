@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Foto Booth</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
+    <script>
+        function show(shown, hidden) {
+            document.getElementById(shown).style.display = 'block';
+            document.getElementById(hidden).style.display = 'none';
+            return false;
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Libre Franklin', sans-serif;
+            ;
+        }
+
+        .t {
+            text-align: center;
+            text-decoration: none;
+            padding-top: 5%;
+            font-size: 1.25em;
+        }
+
+        .main {
+            margin-left: 35%;
+            margin-top: 5%;
+        }
+
+        .main>label {
+            float: left;
+            width: 20ch;
+            text-align: right;
+        }
+
+        .main>input {
+            margin-left: 0.5em;
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="Page1">
+        <p class=t>Login to Foto Booth</p>
+        <form action="login" method="POST">
+            <div class="main">
+                <label> Email address: </label> <input type="text" name="username" title="invalid"
+                    pattern="*@[A-Za-z]{1,}.com" required> <br>
+                <!--<label>Confirm email address: </label> <input type="text" pattern="[A-Za-z]{1,}@[A-Za-z]{1,}.[A-Za-z]{1,}"><br>
+        <label>Create password: </label> <input type="text"> <br> -->
+                <label>Password: </label> <input type="password" name="password" required> <br>
+                <input type="submit" style="border: none; border-radius: 5%; margin-left: 20%; margin-top: 5%;">
+            </div>
+        </form>
+        <br>
+        <br>
+        
+    </div>
+
+   
+
+
+</body>
+
+</html>

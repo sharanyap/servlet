@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Profile Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-6">
+            <div id="title">Foto Booth</div>
+        </div>
+        <div class="col-md-6">
+            <div class="nav">
+                <a class="btn" href="about.html" role="button" id="about">About</a>
+                <a class="btn" href="login.html" role="button" id="book">Book your session!</a>
+            </div>
+        </div>
+    </div>
+    
+    <h1 style="text-align: center;">Photoshoot Page</h1>
+
+    <br>
+    <br>
+    <br>
+
+    <img style="margin-left: 15em; width:70vw; height: 80vh;"
+        src="https://www.momjunction.com/wp-content/uploads/2019/04/41-Creative-Maternity-Photoshoot-Ideas.jpg"
+        alt="Profile Image">
+
+    <br>
+    <br>
+    <br>
+
+    <div style="margin-left: 35em;">
+        <h3 style="margin-left: 5em;">Request Form</h3>
+
+        <br>
+        <br>
+		<form id="first_form" action="photoshoot" method="post">
+        <label for="name">Name: </label><input id="name" name="name" type="text" size="42"> <br>
+        <br>
+        <label for="email">Email: </label><input id="email" name="email" type="text" size="42"> <br>
+        <br>
+        <label for="photo_type">Please describe what type of Photoshoot are you looking for?</label> <br>
+        <textarea id="photo_type" name="photo_type" rows="3" cols="45"></textarea> <br>
+        <br>
+        <label for="quantity">How many pictures do you want to take?</label> <input id="quantity" type="text" name="quantity" size="14"> <br>
+        <br>
+        Date Available: <br>
+        <label for="month">Month:</label><input id="month" name = "month" type="text" maxlength="9" size="16" title="Enter full name of month">
+        <label for="day">Day:</label><input id="day" name = "day" type="text" maxlength="2" pattern="[0-9][0-9]" size="16"> 
+        <br>
+        <br>
+        <button style="margin-left: 10em;" type="submit" onclick="clicked();">Submit Request</button>
+		</form>
+        <br>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="script.js"></script>   
+
+    <!--Links for Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
